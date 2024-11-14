@@ -4,13 +4,13 @@ import Page from './Hirokopage.js';
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class SecurePage extends Page {
+class InventoryPage extends Page {
     /**
      * define selectors using getter methods
      */
-    get flashAlert () {
-        return $('#flash');
+    get shoppingCart () {
+        return $('a.shopping_cart_link'); //fill "#flash" with css "" if it is correct password
     }
 }
 
-export default new SecurePage();
+export default new InventoryPage();
